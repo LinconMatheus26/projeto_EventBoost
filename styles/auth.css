@@ -1,0 +1,181 @@
+/* Estilos específicos para login.html, criar-conta.html, redefinir-senha.html */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Ajusta para caber o footer */
+    background-color: var(--bg-color-dark);
+    padding: 2rem 1rem;
+  }
+  
+  .auth-box {
+    background-color: var(--bg-color-light);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  
+  .auth-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .auth-box h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color-dark);
+  }
+  
+  .btn-google,
+  .btn-microsoft {
+    width: 100%;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--border-color);
+  }
+  
+  .btn-google {
+    background-color: #db4437; /* Google Red */
+    color: var(--text-color-light);
+  }
+  
+  .btn-google:hover {
+    background-color: #c23321;
+  }
+  
+  .btn-microsoft {
+    background-color: #2f2f2f; /* Microsoft Dark */
+    color: var(--text-color-light);
+  }
+  
+  .btn-microsoft:hover {
+    background-color: #000000;
+  }
+  
+  /* Icones para botões de login social (simulado, você precisaria de icones reais) */
+  .btn-google::before,
+  .btn-microsoft::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+  }
+  
+  .btn-google::before {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDYuMDY1QzE0LjQ5MDcgNi4wNjUgMTYuMjIgNi45MjM1IDE3LjE1NjggNy43OTdMMjAuMDYwMyA1LjM0NjVDMTcuODk0NiAzLjQwMjYgMTUuMDExMSAyIDExLjg3NjggMiBDNy4zMTY0IDIgMy40ODE1OSA0LjYwMzEgMS44OTQ5MiA4LjMzNjQ5TDQuODgzNTkgMTAuNjQ1M0M1LjcwMDQ0IDguNDQ5NzYgOC41MzI3NyA2LjA2NSAxMiA2LjA2NVoiIGZpbGw9IiNGRkQwMDAiLz4KPHBhdGggZD0iTTEuODk0OTIgOC4zMzY0OUwxLjkzMjY3IDguMzg2NzFMNC44ODM1OSAxMC42NDUzQzQuODM1NTkgMTAuNzc2NCA0LjczNzQxIDEwLjg5MjcgNC42NDIxOCAxMS4wMDM5TDQuODg3NjEgMTMuOTgxN0M1LjMzNTc4IDEzLjM4NjcgNS42NjA2IDEzLjAyODMgNi4wNTM0MyAxMi43NTUzTDMuMDQxODcgMTAuNTIyN0MyLjYxMzA4IDkuODUzNiAyLjIyMDQyIDkuMDk1MDggMS44OTQ5MiA4LjMzNjQ5WiIgZmlsbD0iI0ZGMDAwMCIvPgo8cGF0aCBkPSJNMjIuMTY0NSAxMC41MTk3QzIyLjMwOTIgMTAuMTYxMiAyMi4zNTA2IDkuODA3MzcgMjIuMzcwOCA5LjM2MDUyTDExLjg3NjggNy40MjgzMkMyLjYzNjA1IDcuNjU4NzkgMi43NTA2NSA3LjQzMDcyIDMuMDY1NjQgNy40MzA3Mkw2LjAxNjY1IDkuNTU1OTdDMTAuMTE4MiAxMC43MjcyIDE1LjE3OTIgOS43NjY1MSAxOC41NDk4IDE0LjU1OTVMMTguNjIyMiAxNC42MjE2TDIyLjE2NDUgMTAuNTE5N1oiIGZpbGw9IiM0Mjg1RjQiLz4KPHBhdGg dGwtNjQwNCA1MzE1MjUiIHdpZHRoPSIxNzUiIGhlaWdodD0iMTc1IiBmaWxsPSJyZ2JhKDMxLDMyLDMxLDEpIi8+Cjwvc3ZnPg==');
+  }
+  
+  .btn-microsoft::before {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBMNiAzVjguN0wxMiAxMC4zVjBaIiBmaWxsPSIjRjIyNzA1Ii8+CjxwYXRoIGQ9Ik0xOCAzTDEyIDBWOS43TDE4IDExLjRWMy4wNloiIGZpbGw9IiM3RkI2MTAiLz4KPHBhdGggZD0iTDE4IDEyVjI0TDI0IDIxVjkuM0wxOCAxMlYxMi4wNloiIGZpbGw9IiM0ODkwRkIiLz4KPHBhdGggZD0iTDAgMjdMMTIgMjRWMTRuM0wwIDE3LjhWMjdaIiBmaWxsPSIjNzQxMEE2Ii8+Cjwvc3ZnPg=='); /* Exemplo, pode ser um SVG real do ícone da Microsoft */
+  }
+  
+  
+  .divider {
+    margin: 1.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: var(--border-color);
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--text-color-dark);
+  }
+  
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="text"] {
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input[type="email"]:focus,
+  form input[type="password"]:focus,
+  form input[type="text"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  form .btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+  }
+  
+  .link-conta {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .link-conta a {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .link-conta a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .auth-box {
+      padding: 1.5rem;
+    }
+  
+    .auth-box h2 {
+      font-size: 1.7rem;
+    }
+  
+    .auth-logo {
+      max-width: 120px;
+    }
+  }

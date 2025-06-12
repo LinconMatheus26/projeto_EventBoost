@@ -1,0 +1,259 @@
+/* Estilos específicos para index.html */
+
+.hero {
+    background-color: var(--bg-color-dark);
+    padding-bottom: 4rem; /* Espaçamento extra abaixo da seção */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .hero .navbar {
+    background: transparent; /* Navbar transparente na hero section */
+    box-shadow: none;
+    padding: 1.5rem 2rem;
+  }
+  
+  .hero .navbar .logo img {
+      height: 100px; /* Altura maior para o logo na hero section */
+      width: auto;
+  }
+  
+  .hero .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .hero .nav-links .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+  }
+  
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+    flex-wrap: wrap-reverse; /* Imagem acima do texto em mobile */
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 2rem;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .hero-text p {
+    font-size: 1.15rem;
+    color: var(--text-color-dark);
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Seção de Recursos (Features) */
+  .features {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--bg-color-light);
+  }
+  
+  .features h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-color-dark);
+  }
+  
+  .features .cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .features .card {
+    background-color: var(--bg-color-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 380px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .features .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .features .card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .features .card p {
+    color: var(--text-color-dark);
+    font-size: 1rem;
+  }
+  
+  /* Seção Sobre Nós */
+  .about-us {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: var(--bg-color-dark);
+  }
+  
+  .about-us h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+      color: var(--text-color-dark);
+  }
+  
+  .about-us p {
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-color-dark);
+  }
+  
+  /* Seção de Contato */
+  .contact {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: var(--bg-color-light);
+  }
+  
+  .contact h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+      color: var(--text-color-dark);
+  }
+  
+  .contact p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: var(--text-color-dark);
+  }
+  
+  .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: var(--bg-color-dark);
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: left;
+  }
+  
+  .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: var(--text-color-dark);
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+      border-color: var(--primary-color);
+      outline: none;
+  }
+  
+  .contact-form textarea {
+      resize: vertical;
+  }
+  
+  .contact-form .btn-primary {
+      width: auto;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 992px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .hero-image {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-text h2 {
+      font-size: 2.2rem;
+    }
+  
+    .features .card {
+      max-width: 100%;
+    }
+  
+    .hero .navbar .logo img {
+        height: 45px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+    }
+  
+    .features h2, .about-us h2, .contact h2 {
+        font-size: 1.8rem;
+    }
+  
+    .contact-form {
+        padding: 1.5rem;
+    }
+  }

@@ -1,0 +1,124 @@
+/* Estilos específicos para detalhes-evento.html */
+
+.event-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--bg-color-light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+  
+  #event-detail-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  #event-detail-content .event-image {
+    flex: 1 1 400px; /* Flexível, mas com base de 400px */
+    min-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #event-detail-content .event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 400px; /* Limite a altura da imagem */
+  }
+  
+  .event-info {
+    flex: 1 1 500px; /* Flexível, mas com base de 500px */
+    min-width: 300px;
+  }
+  
+  .event-info h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .event-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #444;
+  }
+  
+  .event-info strong {
+    color: var(--text-color-dark);
+  }
+  
+  .event-info .details-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+  
+  .event-info .details-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    color: #666;
+  }
+  
+  .event-info .details-list li strong {
+    display: inline-block;
+    min-width: 80px; /* Alinha os dois pontos */
+    color: var(--text-color-dark);
+  }
+  
+  .event-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    margin-top: 1.5rem;
+  }
+  
+  .event-actions .btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 992px) {
+    #event-detail-content {
+      flex-direction: column;
+    }
+  
+    .event-info {
+      text-align: center;
+    }
+  
+    .event-actions {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .event-detail-container {
+      padding: 1.5rem;
+    }
+    .event-info h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-info h2 {
+      font-size: 1.7rem;
+    }
+    .event-info p, .event-info .details-list li {
+      font-size: 0.95rem;
+    }
+    .event-actions {
+      flex-direction: column;
+    }
+    .event-actions .btn {
+      width: 100%;
+    }
+  }

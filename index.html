@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventBoost - Agendamento Inteligente</title>
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="imagem/logo2.png" alt="Logo EventBoost" width="160" height="40">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+        <li><a href="agendamento.html" class="btn btn-primary">Começar</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Agendamento fácil com antecedência</h2>
+        <p>Organize e automatize seus eventos com a plataforma EventBoost. Reduza faltas, aumente o engajamento e tenha controle total do seu evento em um só lugar.</p>
+      </div>
+      <div class="hero-image">
+        <img src="imagem/evento.jpg" alt="Demonstração visual" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="recursos" class="features">
+      <h2>Reduza ausências e aumente o foco</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Lembrete por SMS</h3>
+          <p>24 horas antes do evento, enviamos uma mensagem para lembrar os participantes.</p>
+        </div>
+        <div class="card">
+          <h3>Email de Agradecimento</h3>
+          <p>2 horas após o evento, enviamos um email de agradecimento automaticamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about-us">
+      <h2>Sobre a EventBoost</h2>
+      <p>A EventBoost nasceu da necessidade de simplificar a organização de eventos e aumentar a participação. Nossa missão é fornecer uma plataforma intuitiva e poderosa para agendamentos inteligentes, lembretes automáticos e acompanhamento pós-evento, garantindo o sucesso de cada iniciativa.</p>
+      <p>Com foco na experiência do usuário e na eficiência, a EventBoost é a solução ideal para empresas, instituições de ensino e organizadores de eventos de todos os portes.</p>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Entre em Contato</h2>
+      <p>Tem alguma dúvida ou precisa de suporte? Entre em contato conosco!</p>
+      <form class="contact-form">
+        <label for="contact-name">Nome:</label>
+        <input type="text" id="contact-name" name="name" required>
+        
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="email" required>
+        
+        <label for="contact-message">Mensagem:</label>
+        <textarea id="contact-message" name="message" rows="5" required></textarea>
+        
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EventBoost - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

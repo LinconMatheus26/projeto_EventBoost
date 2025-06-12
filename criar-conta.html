@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar Conta - EventBoost</title>
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/auth.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+</head>
+<body>
+  <main class="auth-container">
+    <div class="auth-box">
+      <img src="imagem/logo2.png" alt="Logo EventBoost" class="auth-logo" />
+      <h2>Criar Conta</h2>
+      <form id="form-criar-conta">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+      <p class="link-conta">Já tem uma conta? <a href="login.html">Entrar</a></p>
+    </div>
+  </main>
+
+  <footer><p>&copy; 2025 EventBoost</p></footer>
+  <script src="script/auth.js"></script>
+</body>
+</html>

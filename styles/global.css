@@ -1,0 +1,183 @@
+/* Variáveis CSS para cores e fontes */
+:root {
+    --primary-color: #007bff; /* Azul vibrante */
+    --secondary-color: #6c757d; /* Cinza para botões secundários */
+    --accent-color: #28a745; /* Verde para sucesso */
+    --text-color-dark: #343a40; /* Texto principal escuro */
+    --text-color-light: #f8f9fa; /* Texto claro (para fundos escuros) */
+    --bg-color-light: #ffffff; /* Fundo claro */
+    --bg-color-dark: #f0f2f5; /* Fundo secundário claro */
+    --border-color: #dee2e6; /* Cor da borda */
+    --font-family-sans: 'Arial', sans-serif;
+    --font-family-serif: 'Georgia', serif;
+  }
+  
+  /* Reset básico e estilos globais */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family-sans);
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background-color: var(--bg-color-light);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color-dark);
+    margin-bottom: 1rem;
+  }
+  
+  /* Contêiner principal para centralizar conteúdo */
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex-grow: 1; /* Permite que o conteúdo cresça e ocupe o espaço disponível */
+  }
+  
+  /* Botões genéricos */
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Tom mais escuro do azul */
+    text-decoration: none;
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #545b62; /* Tom mais escuro do cinza */
+    text-decoration: none;
+  }
+  
+  /* Mensagens de feedback */
+  .message-success {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde escuro */
+    border: 1px solid #c3e6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  
+  .message-error {
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  
+  .message-info {
+    background-color: #d1ecf1; /* Azul claro */
+    color: #0c5460; /* Azul escuro */
+    border: 1px solid #bee5eb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  
+  
+  /* Navbar global */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-color-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar .logo img {
+    height: 40px; /* Altura padrão para o logo na navbar */
+    width: auto;
+  }
+  
+  .navbar nav a {
+    color: var(--text-color-dark);
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar nav a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: auto; /* Empurra o rodapé para o fundo */
+    padding: 1.5rem;
+    background-color: var(--text-color-dark);
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar nav {
+      margin-top: 1rem;
+    }
+  
+    .navbar nav a {
+      margin: 0 0.5rem 0.5rem 0;
+      display: inline-block;
+    }
+  
+    .container {
+      margin: 1rem auto;
+      padding: 0 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
