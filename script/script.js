@@ -9,7 +9,7 @@ const mockEvents = [
     time: '14:00 - 17:00',
     location: 'Online (Zoom)',
     description: 'Aprenda técnicas e ferramentas para otimizar seu tempo e aumentar sua produtividade no dia a dia. Ideal para profissionais e estudantes.',
-    image: 'https://via.placeholder.com/600x400/87CEEB/FFFFFF?text=Workshop+Produtividade' // Imagem placeholder
+    image: 'https://ma.senac.br/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-16-at-15.16.00-819x1024.jpeg' // Imagem placeholder
   },
   {
     id: 'e2',
@@ -18,7 +18,7 @@ const mockEvents = [
     time: '19:00 - 21:00',
     location: 'Centro de Convenções, Recife-PE',
     description: 'Discussão sobre as últimas tendências e impactos da Inteligência Artificial na sociedade e nos negócios. Com especialistas da área.',
-    image: 'https://via.placeholder.com/600x400/FFD700/FFFFFF?text=Palestra+IA'
+    image: 'https://www.livrariasenacceara.com.br/wp-content/uploads/2023/02/INTELIGENCIA-ARTIFICIAL.jpg'
   },
   {
     id: 'e3',
@@ -27,7 +27,7 @@ const mockEvents = [
     time: '09:00 - 18:00',
     location: 'Parque de Exposições, Olinda-PE',
     description: 'Oportunidades de networking, palestras inspiradoras e contato com empresas de diversos setores. Traga seu currículo!',
-    image: 'https://via.placeholder.com/600x400/90EE90/FFFFFF?text=Feira+Carreiras'
+    image: 'https://mlbtbcqppupm.i.optimole.com/cb:II15~5a0ea/w:850/h:560/q:90/f:best/ig:avif/https://blog.newtonpaiva.br/wp-content/uploads/2022/10/CapaLinkedinmagnetico2022.png'
   },
   {
     id: 'e4',
@@ -36,7 +36,7 @@ const mockEvents = [
     time: '10:00 - 12:00 (Sábados)',
     location: 'Estúdio Urbano, Boa Vista, Recife-PE',
     description: 'Aprenda os fundamentos da fotografia: composição, iluminação e manuseio da câmera. Para iniciantes e entusiastas.',
-    image: 'https://via.placeholder.com/600x400/ADD8E6/FFFFFF?text=Curso+Fotografia'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFzAwDB-Nyo5xDM_CeJchN1O_5a7wobYqmUA&s'
   }
 ];
 
